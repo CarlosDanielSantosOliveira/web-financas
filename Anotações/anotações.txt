@@ -2,4 +2,35 @@ Curso de java react
 
 Anotações
 
-Aula 14: Pesquisar o que é um schema  
+Aula 14: Pesquisar o que é um schema
+
+Java Persistence API (JPA)
+
+Mapeamento Objeto Relacional (ORM)
+
+Evita a criação de sql nativo misturado com código java
+
+Abstração da camada do banco de dados
+
+Prove formas simples de realizar as operações na base de dados através da aplicação java
+
+Migrar para outros SGBD's sem basicamente alterar quase nada.
+
+Persistence.xml: Ele é responsavel por distribuir os dados da aplicação para mais de um
+SGBD. Dentro dele existe um EntityManagerFactory, onde tem varias EntityManager. Dessa forma
+podemos usar o PostGreSQL e o Oracle na mesma aplicação
+O EntityManager vai ser o responsavel por persistir os dados, ele que deleta, atualiza os dados, conta e etc...
+
+CAMADA MODEL: Entities, Repositories (DAO's/ Persistência)
+CAMADA SERVICE: Regras de Negócio,
+CAMADA CONTROLLER: Endpoints Rest DTO's (Data Transfer Object)
+
+Container de injeção de dependencias
+
+- Container é formado de beans gerenciados.
+- Beans gerenciados são instâncias de objetos de configuração, negócio, infraestrutura, componentes, dentre outros.
+- Todos os beans gerenciados são fornecidos pelo Container de Injeção de Depêndencias do Spring framework.
+- Podem ser declarados como estereótipos ou em classes de configuração
+- toda vez que precisarmos de uma instância de um dos objetos do container, realizamos a injeção de dependência e o container do spring
+irá fornecer a instância já configurada do mesmo.
+- Por padrão os Beans são singletons, sendo uma instância de cada por aplicação.
